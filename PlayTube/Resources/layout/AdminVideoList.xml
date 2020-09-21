@@ -1,0 +1,50 @@
+
+<android.support.v7.widget.CardView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="5dp"
+    android:id="@+id/cardMain"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imgVideoThumbnail"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:padding="5dp"
+            android:singleLine="true"
+            android:id="@+id/txtVideoTitle"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:visibility="gone"
+            android:paddingStart="5dp"
+            android:paddingBottom="5dp"
+            android:singleLine="true"
+            android:id="@+id/txtdays"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <CheckBox
+            android:visibility="gone"
+            android:layout_marginTop="-8dp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/black"
+            android:text="Needs approval"
+            android:textSize="12sp"
+            android:id="@+id/checkBoxApprove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:minHeight="200dp"
+    android:minWidth="1000dp"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:inputType="textMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editDescription"
+        android:lines="4"
+        android:hint="Describe Your Post"
+        android:background="@drawable/edit_text_border"
+        android:gravity="top" />
+
+    <LinearLayout android:orientation="horizontal"
+    android:paddingTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:text="@string/Lbl_Cancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCancel" 
+        android:layout_weight=".50" 
+        android:background="@drawable/shape_radius_btn_default"/>
+
+    <Button
+        android:text="POST"
+        android:layout_width="0dp"
+        android:layout_weight=".50"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPost" 
+        android:background="@drawable/shape_radius_btn"/>
+    </LinearLayout>
+</LinearLayout>
